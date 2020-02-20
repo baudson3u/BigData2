@@ -13,6 +13,7 @@ public class Route {
     }
 
     public Route(String airline, String airlineId, String sourceAirport, String src, String destAirport, String dst) {
+        super();
         this.airline = airline;
         this.airlineId = airlineId;
         this.sourceAirport = sourceAirport;

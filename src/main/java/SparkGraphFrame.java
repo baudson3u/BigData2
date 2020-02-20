@@ -39,7 +39,7 @@ public class SparkGraphFrame {
 
         System.out.println("-------------------Question-5-------------------");
         Dataset<Row> degrees = g.degrees();
-        degrees.orderBy(functions.col("degree").desc()).show();//(int)degrees.count());
+        degrees.orderBy(functions.col("degree").desc()).show();
 
 
         System.out.println("-------------------Question-6-------------------");
@@ -58,9 +58,7 @@ public class SparkGraphFrame {
                 functions.col("indegree").divide(functions.col("outdegree")).as("topTransferts")
         );
 
-        transferts.orderBy(
-                functions.abs(functions.col("topTransferts").minus(1))
-        ).show();
+        transferts.orderBy(functions.abs(functions.col("topTransferts").minus(1))).show();
 
 
         System.out.println("-------------------Question-9-------------------");
