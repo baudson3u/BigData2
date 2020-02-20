@@ -63,11 +63,8 @@ public class SparkGraphFrame {
         ).show();
 
 
-        /*System.out.println("-------------------Question-9-------------------");
-        Dataset<Row> triplet = g.triangleCount().run();
-        triplet.orderBy(
-                functions.col("count").desc()
-        ).show(false);*/
+        System.out.println("-------------------Question-9-------------------");
+
 
 
         System.out.println("-------------------Question-10-------------------");
